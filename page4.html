@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #aud{
+            display: none;
+        }
+        #btn4{
+            font-size: 35px;
+            font-family: "Algerian", sans-serif;
+            background:linear-gradient(45deg,black,deeppink,black);
+            color:white;
+            width:50px;
+            border-radius: 65px;
+            border-color:black;
+            box-shadow: 0 0 35px yellow;
+            padding:15px;
+            margin-left: 200px;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url("img/yrose.jpg");
+
+        }
+        .gallery-section{
+            text-align: center;
+            margin: 10px auto;
+        }
+        .gallery-figure{
+            border: 2px solid yellow;
+            width: 350px;
+            margin: 5px;
+            display: inline-block;
+            padding: 5px;
+            border-radius: 10px;
+            height:350px;
+        }
+        .gallery-figure:hover{
+            box-shadow: 0 0 10px yellow;
+            cursor: pointer;
+        }
+        .gallery-zoom{
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .gallery-zoom img{
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+        .gallery-zoom:hover img{
+            transform: scale(1.2,1.2);
+        }
+        .gallery-figure figcaption{
+            color: red;
+            padding: 10px;
+        }
+        #aud{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="width1">
+    <h1 style="text-align: center;color:yellow;font-family: Algerian;"><i><--Some Memories With Lovely Family--></i></h1>
+</div>
+<section class="gallery-section ">
+    <!--laptop 1-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated swing">
+            <img src="img/panu9.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--laptop 2-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated slideInDown">
+            <img src="img/aaibaba.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--laptop 3-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated swing">
+            <img src="img/panu3.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--laptop 4-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated slideInLeft">
+            <img src="img/panu5.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--mobile 5-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated swing">
+            <img src="img/panu7.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--mobile 6-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated slideInRight">
+            <img src="img/panu4.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--mobile 5-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated swing">
+            <img src="img/snkrnt.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--mobile 6-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated slideInRight">
+            <img src="img/panu2.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+    <!--mobile 7-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated bounceIn">
+            <img src="img/yrose.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+
+    <!--mobile 7-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated bounceIn">
+            <img src="img/panu13.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+    <!--mobile 4-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated bounceIn">
+            <img src="img/panu14.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+</section>
+
+<div style="margin-top: 5px;margin-left: 45%;">
+    <a href="page5.html" style="text-decoration: underline; color: red; font-size: 35px; font-family: Algerian; text-align: center">Click Me</a>
+</div>
+<audio controls autoplay id="aud" loop">
+<source src="songs/song4.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
